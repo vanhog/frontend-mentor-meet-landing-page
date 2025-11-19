@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --cyan-600: #4d96a9;
+  --cyan-300: #8fe3f9;
+  --purple-600: #855fb1;
+  --purple-300: #d9b8ff;
+  --slate-900: #28283d;
+  --slate-600: #87879d;
+  --slate-300: #d1d1df;
+  --white: #fafafa;
+
+  --mobile-width: 23.4375rem;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Red Hat Display', 'Lucida Sans', 'Lucida Sans Regular',
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.text-preset-1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.text-preset-2 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
+.text-preset-3 {
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--cyan-600);
+  line-height: 110%;
+  letter-spacing: 0.25rem;
+}
+
+.text-preset-4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: 0;
+  color: var(--slate-600);
+}
+
+.text-prese-5 {
+  font-size: 1rem;
+  font-weight: 900;
+  line-height: 150%;
+  letter-spacing: 0;
+}
+.center-canvas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.centered-canvas {
+  width: var(--mobile-width);
+
+  background-color: var(--white);
+}
+
+.logo {
+  padding: 3rem 0.5rem 0 0.5rem;
+  width: 7.375rem;
+  height: 1.75rem;
+}
+
+.hero {
+  border: 1px solid black;
+  margin: 3rem 2.1875rem;
+}
+
+.hero__image {
+  object-fit: contain;
+  width: 100%;
+  padding-inline: -2rem;
+  margin-block-end: 3rem;
+}
+
+@media screen and (max-width: 40rem) {
+  .text-preset-1 {
+    font-size: 2.5rem;
+    padding-inline: 1rem;
+  }
+  .text-preset-4 {
+    font-size: 1rem;
+    line-height: 150%;
+  }
+}
