@@ -19,6 +19,9 @@
     'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+body {
+  background-color: var(--slate-600);
+}
 .text-preset-1 {
   font-size: 4rem;
   font-weight: 900;
@@ -49,7 +52,7 @@
   color: var(--slate-600);
 }
 
-.text-prese-5 {
+.text-preset-5 {
   font-size: 1rem;
   font-weight: 900;
   line-height: 150%;
@@ -76,17 +79,53 @@
 }
 
 .hero {
-  border: 1px solid black;
   margin: 3rem 2.1875rem;
 }
 
 .hero__image {
-  object-fit: contain;
+  background-image: url(./assets/tablet/image-hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 10rem;
   width: 100%;
-  padding-inline: -2rem;
+  margin-block-start: 4rem;
   margin-block-end: 3rem;
 }
 
+.white {
+  color: var(--white);
+}
+
+.cyan-300 {
+  color: var(--cyan-300);
+}
+
+.hero__title {
+  margin-block-end: 1.5rem;
+}
+
+.hero__text {
+  margin-block-end: 1.5rem;
+}
+
+.hero__download-button {
+  width: 12.0625rem;
+  background-color: var(--cyan-600);
+  margin-inline: 1rem;
+  margin-block-end: 1rem;
+  border: 1rem solid var(--cyan-600);
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.hero__whatis-button {
+  width: 10.0625rem;
+  background-color: var(--purple-600);
+  border: 1rem solid var(--purple-600);
+  border-radius: 999px;
+  cursor: pointer;
+}
 @media screen and (max-width: 40rem) {
   .text-preset-1 {
     font-size: 2.5rem;
