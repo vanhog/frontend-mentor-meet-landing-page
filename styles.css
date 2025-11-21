@@ -181,7 +181,6 @@ body {
   margin-block: 4rem;
 }
 .users__text__roof {
-  font-size: 0.75rem;
   margin-block-end: 1rem;
 }
 .users__text__title {
@@ -197,7 +196,7 @@ body {
   margin-block-end: -2rem;
 }
 .footer__text {
-  background: url(./assets/mobile/image-footer.jpg) no-repeat;
+  background: url(./assets/mobile/footer-mobile.png) no-repeat;
   background-color: var(--cyan-600);
   background-blend-mode: soft-light;
   background-size: 100%;
@@ -209,12 +208,10 @@ body {
 }
 
 .footer__text__title {
-  font-size: 2rem;
   color: var(--white);
 }
 
 .footer__text__text {
-  font-size: 1rem;
   color: var(--white);
   margin-block-start: 1.5rem;
 }
@@ -240,6 +237,12 @@ footer {
   .text-preset-1 {
     font-size: 2.5rem;
     padding-inline: 1rem;
+  }
+  .text-preset-2 {
+    font-size: 2rem;
+  }
+  .text-preset-3 {
+    font-size: 0.75rem;
   }
   .text-preset-4 {
     font-size: 1rem;
