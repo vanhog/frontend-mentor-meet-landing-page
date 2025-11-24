@@ -368,11 +368,13 @@ footer {
     width: 90rem;
   }
   .footer__overlay {
+    display: flex;
     flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    width: var(--desktop-width);
-    height: 19auto;
+    align-items: start;
+    justify-content: center;
+    width: 86rem;
+    height: 11.25rem;
+    padding-block-start: 5rem;
   }
   .footer__text {
     background: url(./assets/desktop/image-footer.jpg) no-repeat;
@@ -381,11 +383,16 @@ footer {
     background-size: 100%;
     background-position: center;
     background-position: top;
-    height: 19.5rem;
   }
   .footer__text__title,
   .footer__text__text {
-    width: var(--desktop-width);
     text-align: left;
+    width: 22rem;
+  }
+
+  .footer__text__title,
+  .footer__text__text,
+  .footer__download-button {
+    margin: 3rem;
   }
 }
