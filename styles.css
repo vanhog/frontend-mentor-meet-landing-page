@@ -11,6 +11,8 @@
   --white: #fafafa;
 
   --mobile-width: 23.4375rem;
+  --tablet-width: 48rem;
+  --desktop-width: 90rem;
 }
 * {
   padding: 0;
@@ -22,22 +24,29 @@
 body {
   background-color: var(--slate-600);
 }
-.text-preset-1 {
-  font-size: 4rem;
-  font-weight: 900;
-  line-height: 110%;
-  letter-spacing: 0;
-}
 
-.text-preset-2 {
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.text-preset-1 {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 110%;
   letter-spacing: 0;
 }
 
+.text-preset-2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 0;
+}
+
 .text-preset-3 {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 900;
   color: var(--cyan-600);
   line-height: 110%;
@@ -45,9 +54,9 @@ body {
 }
 
 .text-preset-4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 110%;
+  line-height: 150%;
   letter-spacing: 0;
   color: var(--slate-600);
 }
@@ -68,7 +77,6 @@ body {
 
 .centered-canvas {
   width: var(--mobile-width);
-
   background-color: var(--white);
 }
 
@@ -80,6 +88,9 @@ body {
 
 .hero {
   margin: 3rem 2.1875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .hero__image {
@@ -103,6 +114,7 @@ body {
 
 .hero__title {
   margin-block-end: 1.5rem;
+  width: 18rem;
 }
 
 .hero__text {
@@ -121,10 +133,19 @@ body {
 
 .hero__whatis-button {
   width: 10.0625rem;
+  margin-inline: 1rem;
+  margin-block-end: 1rem;
   background-color: var(--purple-600);
   border: 1rem solid var(--purple-600);
   border-radius: 999px;
   cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-container {
@@ -161,11 +182,18 @@ body {
   color: var(--slate-600);
 }
 
+.usecases {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .users {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1rem;
   margin-block-start: 4rem;
 }
@@ -202,9 +230,16 @@ body {
   background-size: 100%;
   background-position: center;
   background-position: top;
-  height: 23.5rem;
+  height: auto;
+}
+
+.footer__overlay {
+  background-color: rgba(255, 255, 255, 0.2);
   padding-inline: 2rem;
-  padding-block: 4rem;
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__text__title {
@@ -233,19 +268,124 @@ footer {
 .purple-300 {
   color: var(--purple-300);
 }
-@media screen and (max-width: 40rem) {
+
+@media screen and (min-width: 48rem) {
   .text-preset-1 {
-    font-size: 2.5rem;
-    padding-inline: 1rem;
+    font-size: 3rem;
   }
   .text-preset-2 {
-    font-size: 2rem;
+    font-size: 2.25rem;
   }
   .text-preset-3 {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
   }
   .text-preset-4 {
     font-size: 1rem;
-    line-height: 150%;
+  }
+
+  .centered-canvas {
+    width: var(--tablet-width);
+  }
+  .hero {
+    width: 27rem;
+  }
+  .hero__image {
+    height: 18.9375rem;
+  }
+  .hero__title {
+    width: 20rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .usecases {
+    width: 42.5rem;
+  }
+  .users {
+    width: 42.5rem;
+  }
+  .users__text {
+    width: 31.5rem;
+  }
+  .users__text__title {
+    margin: 1rem;
+  }
+
+  .footer__text__text {
+    width: 31.5rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .text-preset-1 {
+    font-size: 4rem;
+  }
+  .text-preset-2 {
+    font-size: 2.5rem;
+  }
+  .text-preset-3 {
+    font-size: 1rem;
+  }
+  .text-preset-4 {
+    font-size: 1.125rem;
+  }
+  .centered-canvas {
+    width: var(--desktop-width);
+  }
+  .hero {
+    width: 28rem;
+  }
+  .hero__image {
+    display: none;
+  }
+  .hero__title {
+    width: 28rem;
+  }
+  .buttons {
+    flex-direction: row;
+  }
+  .usecases {
+    width: 42.5rem;
+  }
+  .users {
+    width: 70rem;
+  }
+  .users img {
+    border-radius: 5%;
+    height: 16rem;
+    width: 16rem;
+  }
+
+  .users__text {
+    width: 32.5rem;
+  }
+  .users__text__title {
+    margin: 1rem;
+    width: 28rem;
+  }
+
+  footer {
+    width: 90rem;
+  }
+  .footer__overlay {
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    width: var(--desktop-width);
+    height: 19auto;
+  }
+  .footer__text {
+    background: url(./assets/desktop/image-footer.jpg) no-repeat;
+    background-color: var(--cyan-600);
+    background-blend-mode: soft-light;
+    background-size: 100%;
+    background-position: center;
+    background-position: top;
+    height: 19.5rem;
+  }
+  .footer__text__title,
+  .footer__text__text {
+    width: var(--desktop-width);
+    text-align: left;
   }
 }
