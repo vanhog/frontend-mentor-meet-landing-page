@@ -405,13 +405,13 @@ footer {
   }
   .buttons {
     flex-direction: row;
-    margin-block-end: 6rem;
+    margin-block-end: 5rem;
   }
   .usecases {
     width: 42.5rem;
   }
   .users {
-    margin-block-start: 6rem;
+    margin-block-start: 4rem;
     width: 70rem;
   }
   .users img {
@@ -424,7 +424,7 @@ footer {
     width: 32.5rem;
   }
   .users__text__title {
-    margin: 1rem;
+    margin: 2rem;
     width: 28rem;
   }
 
