@@ -104,6 +104,12 @@ main {
   margin-block-end: 3rem;
 }
 
+.hero__image-left {
+  display: none;
+}
+.hero__image-right {
+  display: none;
+}
 .white {
   color: var(--white);
 }
@@ -140,7 +146,12 @@ main {
   border-radius: 999px;
   cursor: pointer;
 }
-
+.hero__items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .buttons {
   display: flex;
   flex-direction: column;
@@ -330,7 +341,8 @@ footer {
     font-size: 1.125rem;
   }
   .centered-canvas {
-    width: var(--desktop-width);
+    width: 100%;
+    justify-content: center;
   }
   .hero {
     width: 28rem;
@@ -338,16 +350,51 @@ footer {
   .hero__image {
     display: none;
   }
+  .hero {
+    margin: 3rem 2.1875rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  .hil {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: center;
+    transform: translateX(-20%);
+  }
+
+  .hir {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-position: left;
+    transform: translateX(+20%);
+  }
+
+  .hero__image-left {
+    display: inline;
+  }
+  .hero__image-right {
+    display: inline;
+  }
   .hero__title {
+    width: 28rem;
+  }
+  .hero__text {
     width: 28rem;
   }
   .buttons {
     flex-direction: row;
+    margin-block-end: 6rem;
   }
   .usecases {
     width: 42.5rem;
   }
   .users {
+    margin-block-start: 6rem;
     width: 70rem;
   }
   .users img {
@@ -365,22 +412,22 @@ footer {
   }
 
   footer {
-    width: 90rem;
+    width: auto;
   }
   .footer__overlay {
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: center;
-    width: 86rem;
+    width: auto;
     height: 11.25rem;
-    padding-block-start: 5rem;
+    padding-block-start: 2rem;
   }
   .footer__text {
     background: url(./assets/desktop/image-footer.jpg) no-repeat;
     background-color: var(--cyan-600);
     background-blend-mode: soft-light;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
     background-position: top;
   }
