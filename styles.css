@@ -230,6 +230,7 @@ main {
 }
 .users_text__text {
   font-size: 1rem;
+  margin-block-end: 2rem;
 }
 
 .page-container-footer {
@@ -411,7 +412,7 @@ footer {
     width: 42.5rem;
   }
   .users {
-    margin-block-start: 4rem;
+    margin-block-start: 4.5rem;
     width: 70rem;
   }
   .users img {
