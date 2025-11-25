@@ -353,6 +353,11 @@ footer {
     width: 100%;
     justify-content: center;
   }
+
+  .logo {
+    margin-block-end: 3rem;
+  }
+
   .hero {
     width: 28rem;
   }
@@ -367,6 +372,7 @@ footer {
     justify-content: center;
     width: auto;
   }
+
   .hil {
     background-size: contain;
     background-repeat: no-repeat;
@@ -391,6 +397,7 @@ footer {
   }
   .hero__title {
     width: 28rem;
+    margin-block-end: 2.5rem;
   }
   .hero__text {
     width: 28rem;
