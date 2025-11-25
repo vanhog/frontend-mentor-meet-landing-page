@@ -245,7 +245,7 @@ main {
 }
 
 .footer__overlay {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(77, 150, 169, 0.7);
   padding-inline: 2rem;
   padding-block: 3rem;
   display: flex;
@@ -320,6 +320,15 @@ footer {
   }
   .users__text__title {
     margin: 1rem;
+  }
+
+  .footer__text {
+    background: url(./assets/desktop/image-footer.jpg) no-repeat;
+    background-color: var(--cyan-600);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center;
+    background-position: top;
   }
 
   .footer__text__text {
